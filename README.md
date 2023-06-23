@@ -33,5 +33,10 @@ Gympass styled app.
 # Tecnologias utilizadas
 - Typescript
 - Prisma ORM
+- Fastify
 - PostgreSQL
 - Docker
+- Vitest
+
+# Sobre o Projeto
+Este projeto faz parte do terceiro módulo da trilha Node.js do programa Ignite da Rocketseat. A ideia é desenvolver uma aplicação semelhante ao GymPass permitindo usuários a se cadastrarem, fazerem check-ins em academias, tal qual no GymPass.
