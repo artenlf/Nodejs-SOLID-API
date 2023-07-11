@@ -33,7 +33,7 @@ describe('Check-in Use Case', () => {
     vi.useRealTimers()
   })
 
-  it('it should be able to check in', async () => {
+  it('should be able to check in', async () => {
     const { checkIn } = await sut.execute({
       gymId: 'gym-01',
       userId: 'user-01',
@@ -46,7 +46,7 @@ describe('Check-in Use Case', () => {
 
   // red, green, refactor --> TDD flow
 
-  it('it should not be able to check in twice in the same day', async () => {
+  it('should not be able to check in twice in the same day', async () => {
     vi.setSystemTime(new Date(2022, 0, 20, 8, 0, 0))
 
     await sut.execute({
@@ -66,7 +66,7 @@ describe('Check-in Use Case', () => {
     ).rejects.toBeInstanceOf(MaxNumberOfCheckInsError)
   })
 
-  it('it should be able to check in twice in different days', async () => {
+  it('should be able to check in twice in different days', async () => {
     vi.setSystemTime(new Date(2022, 0, 20, 8, 0, 0))
 
     await sut.execute({
@@ -88,7 +88,7 @@ describe('Check-in Use Case', () => {
     expect(checkIn.id).toEqual(expect.any(String))
   })
 
-  it('it should not be able to check in outside of a gym range', async () => {
+  it('should not be able to check in outside of a gym range', async () => {
     gymsRepository.items.push({
       id: 'gym-02',
       title: 'Smart Fit Cambuí II',
