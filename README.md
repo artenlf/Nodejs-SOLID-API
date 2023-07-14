@@ -20,8 +20,8 @@ Gympass styled app.
 - [x] O usuário não pode fazer mais de um check-in no mesmo dia;
 - [x] O usuário não pode fazer check-in se não estiver dentro do raio de 100m distância de uma academia; 
 - [x] O check-in só pode ser validado até 20 minutos após criado;
-- [ ] O check-in só pode ser validado por administradores;
-- [ ] A academia só pode ser cadastrada por administradores;
+- [x] O check-in só pode ser validado por administradores;
+- [x] A academia só pode ser cadastrada por administradores;
 
 # Requisitos Não Funcionais
 - [x] A senha do usuário precisa ser criptografada;
